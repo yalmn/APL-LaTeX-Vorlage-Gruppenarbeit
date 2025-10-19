@@ -5,11 +5,31 @@ Sie ist modular aufgebaut und kann sowohl **in Overleaf** als auch **lokal mit T
 
 ---
 
+###  Arbeiten mit Forks und Branches
+
+Gerne könnt ihr auch Veränderungen über einen **Fork** des Projekts vornehmen.  
+Verwendet dazu folgenden Workflow:
+
+```bash
+# Neuen Branch erstellen
+git checkout -b feature/meine-aenderung
+
+# Änderungen vornehmen und committen
+git add .
+git commit -m "Beschreibung der Änderung"
+
+# Branch pushen
+git push origin feature/meine-aenderung
+
+
+---
+
 ## Schnellstart
 
 ### In Overleaf
-1. Lade die `.zip`-Datei in Overleaf hoch.  
-2. Öffne das Projekt und starte direkt mit der Bearbeitung.  
+1. Lade letzes Release runter
+2. Lade die `.zip`-Datei in Overleaf hoch.  
+3. Öffne das Projekt und starte direkt mit der Bearbeitung.  
 
 ### Lokal mit LaTeX
 ```bash

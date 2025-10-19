@@ -1,0 +1,44 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,left=30mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{format=hang,labelfont=bf}
+\usepackage{booktabs}
+\usepackage{longtable,tabularx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{float} 
+
+
+% Autor-Markierung:
+\usepackage[markup=underlined]{changes}
+% Für finale Version ohne Markierungen:
+% \usepackage[final]{changes}
+
+% Abkürzungen (falls benötigt)
+\usepackage{acronym}
+
+% Literatur (biblatex+biber)
+\usepackage[backend=biber,style=ieee,sorting=nyt]{biblatex}
+\addbibresource{bib/references.bib}
+
+\usepackage{mdframed}
+\usepackage{marginnote}
+
+% Namen in die linke Randspalte legen
+\reversemarginpar
+
+% genug Rand für Namenslabel
+\setlength{\marginparwidth}{28mm}

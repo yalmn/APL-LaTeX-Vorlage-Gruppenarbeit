@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper,oneside]{scrreprt}
+
+\input{includes/packages}
+\input{includes/meta}
+\input{includes/authors}
+
+\begin{document}
+
+% ----------------- DECKBLATT -----------------
+\begin{titlepage}
+  \centering
+  {\Large Hochschule Wismar - Wings\\Fakultät Ingenieurwissenschaften\\[12pt]}
+  \vspace*{35mm}
+  {\LARGE \textbf{APL - TeX-Vorlage}}\\[8pt]
+  {\large Untertitel}\\[18mm]
+  \begin{tabular}{ll}
+    Verfasser:innen: & \theauthors \\
+    Studiengang:     & IT-Sicherheit und Forensik \\
+    Modul:           & Einführung in IT-Sicherheit und Forensik \\
+    Betreuer:        & Prof. Dr. Antje Raab-Düsterhöft \\
+    Abgabedatum:     & \today \\
+  \end{tabular}
+  \vfill
+  {\large Ort, \today}
+\end{titlepage}
+
+% Frontmatter: römische Zählung
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+% ----------------- INHALTSVERZEICHNIS -----------------
+\clearpage
+\pagestyle{empty}
+\tableofcontents
+
+% ----------------- AB ABSTRACT: Kopfzeile aktivieren -----------------
+\clearpage
+\pagestyle{fancy}
+\input{includes/header}
+
+% ----------------- FRONTMATTER -----------------
+% \input{contents/abstract}
+% \input{contents/affirmation}
+% \input{contents/restriction}
+
+% ----------------- HAUPTTEIL -----------------
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{contents/introduction}
+
+% ----------------- LISTEN -----------------
+%\clearpage
+%\listoffigures
+%\clearpage
+%\listoftables
+
+% Abbildungsverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+% Tabellenverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+
+% ----------------- ANHANG -----------------
+\appendix
+\clearpage
+\addchap{Anhang}                        
+
+\addsec{A: AppA} 
+\input{appendix/appendix_a}
+
+% ----------------- ABKÜRZUNGSVERZEICHNIS -----------------
+\clearpage
+\input{contents/abkuerzungen}
+
+% Literaturverzeichnis
+\clearpage
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography
+
+\end{document}

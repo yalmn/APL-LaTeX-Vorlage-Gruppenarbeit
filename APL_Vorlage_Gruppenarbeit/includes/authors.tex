@@ -1,0 +1,27 @@
+% Farben/Namen
+\usepackage{xcolor}
+\definecolor{A1col}{HTML}{1F77B4} 
+\definecolor{A2col}{HTML}{D62728} 
+\definecolor{A3col}{HTML}{2CA02C} 
+
+\newcommand{\nameHY}{Autor \newline 1}
+\newcommand{\nameNK}{Autor \newline 2}
+\newcommand{\nameDG}{Autor \newline 3}
+
+% generische #by#-Umgebung: linker Randstrich + Marginalname
+\newenvironment{by}[2]% #1=color, #2=name
+{%
+  \begin{mdframed}[
+    topline=false, rightline=false, bottomline=false, leftline=true,
+    linecolor=#1, linewidth=2pt,
+    innerleftmargin=10pt, innerrightmargin=8pt,
+    skipabove=6pt, skipbelow=6pt
+  ]%
+  \marginnote{\textcolor{#1}{\footnotesize #2}}%
+}%
+{\end{mdframed}}
+
+% bequeme Kürzel pro Person
+\newenvironment{A1}{\begin{by}{A1col}{\nameHY}}{\end{by}}
+\newenvironment{A2}{\begin{by}{A2col}{\nameNK}}{\end{by}}
+\newenvironment{A3}{\begin{by}{A3col}{\nameDG}}{\end{by}}

@@ -5,7 +5,7 @@ Sie ist modular aufgebaut und kann sowohl **in Overleaf** als auch **lokal mit T
 
 ---
 
-###  Arbeiten mit Forks und Branches
+##  Arbeiten mit Forks und Branches
 
 Gerne könnt ihr auch Veränderungen über einen **Fork** des Projekts vornehmen.  
 Verwendet dazu folgenden Workflow:

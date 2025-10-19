@@ -4,9 +4,10 @@
 \definecolor{A2col}{HTML}{D62728} 
 \definecolor{A3col}{HTML}{2CA02C} 
 
-\newcommand{\nameHY}{Autor \newline 1}
-\newcommand{\nameNK}{Autor \newline 2}
-\newcommand{\nameDG}{Autor \newline 3}
+% Wichtig,\nameAFirst ... ohne Sonderzeichen 
+\newcommand{\nameAFirst}{Autor \newline 1}
+\newcommand{\nameASec}{Autor \newline 2}
+\newcommand{\nameAThird}{Autor \newline 3}
 
 % generische #by#-Umgebung: linker Randstrich + Marginalname
 \newenvironment{by}[2]% #1=color, #2=name
@@ -22,6 +23,6 @@
 {\end{mdframed}}
 
 % bequeme Kürzel pro Person
-\newenvironment{A1}{\begin{by}{A1col}{\nameHY}}{\end{by}}
-\newenvironment{A2}{\begin{by}{A2col}{\nameNK}}{\end{by}}
-\newenvironment{A3}{\begin{by}{A3col}{\nameDG}}{\end{by}}
+\newenvironment{A1}{\begin{by}{A1col}{\nameAFirst}}{\end{by}}
+\newenvironment{A2}{\begin{by}{A2col}{\nameASec}}{\end{by}}
+\newenvironment{A3}{\begin{by}{A3col}{\nameAThird}}{\end{by}}

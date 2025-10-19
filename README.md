@@ -5,30 +5,46 @@ Sie ist modular aufgebaut und kann sowohl **in Overleaf** als auch **lokal mit T
 
 ---
 
-##  Arbeiten mit Forks und Branches
+## Arbeiten mit Forks und Branches
 
 Gerne könnt ihr auch Veränderungen über einen **Fork** des Projekts vornehmen.  
-Verwendet dazu folgenden Workflow:
+Folgt dazu diesem Ablauf:
 
-```bash
-# Neuen Branch erstellen
-git checkout -b feature/meine-aenderung
+1. **Repository forken** (auf GitHub: „Fork“ klicken)
+2. **Eigenen Fork klonen**
+   ```bash
+   git clone https://github.com/<dein-username>/<repo-name>.git
+   cd <repo-name>
+   ```
+3. **Upstream zum Original hinzufügen** (optional, aber empfohlen)
+   ```bash
+   git remote add upstream https://github.com/<original-owner>/<repo-name>.git
+   git fetch upstream
+   ```
+4. **Neuen Branch erstellen**
+   ```bash
+   git checkout -b feature/meine-aenderung
+   ```
+5. **Änderungen vornehmen und committen**
+   ```bash
+   git add .
+   git commit -m "Beschreibung der Änderung"
+   ```
+6. **Branch in deinen Fork pushen**
+   ```bash
+   git push origin feature/meine-aenderung
+   ```
+7. **Pull Request erstellen** (auf GitHub: „Compare & pull request“)
 
-# Änderungen vornehmen und committen
-git add .
-git commit -m "Beschreibung der Änderung"
-
-# Branch pushen
-git push origin feature/meine-aenderung
-
+> So bleibt der `main`-Branch stabil und alle Änderungen nachvollziehbar.
 
 ---
 
 ## Schnellstart
 
 ### In Overleaf
-1. Lade letzes Release runter
-2. Lade die `.zip`-Datei in Overleaf hoch.  
+1. Lade das **letzte Release** herunter.  
+2. Lade die `.zip`-Datei in **Overleaf** hoch.  
 3. Öffne das Projekt und starte direkt mit der Bearbeitung.  
 
 ### Lokal mit LaTeX
@@ -40,6 +56,7 @@ pdflatex main.tex
 ```
 
 ---
+
 
 ## Projektstruktur
 

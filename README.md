@@ -10,7 +10,6 @@ Sie ist modular aufgebaut und kann sowohl **in Overleaf** als auch **lokal mit T
 ### In Overleaf
 1. Lade die `.zip`-Datei in Overleaf hoch.  
 2. Öffne das Projekt und starte direkt mit der Bearbeitung.  
-3. Kompiliere mit **XeLaTeX** oder **LuaLaTeX** (empfohlen).  
 
 ### Lokal mit LaTeX
 ```bash

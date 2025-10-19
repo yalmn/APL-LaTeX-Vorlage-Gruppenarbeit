@@ -47,7 +47,7 @@ APL_Vorlage_Gruppenarbeit/
 
 ---
 
-## 🧠 Features
+## Features
 
 - IEEE-Zitierstil (`\cite{}` einheitlich verwendbar)  
 - Saubere Trennung von **Inhalt** und **Struktur**  
